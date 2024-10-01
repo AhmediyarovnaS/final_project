@@ -1,0 +1,80 @@
+*{
+  margin:0 auto;
+  padding:0 ;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0077ff;
+    width: 100%;
+  /*padding: 20px;*/
+}
+
+.main {
+  padding: 20px;
+  background-color: #0077ff;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s easy;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.main:hover {
+  background-color:#000000;
+  color: #0077ff
+}
+.header:hover{
+  color: #696c70;
+  
+
+}
+
+.image{
+  width: 855px;
+  height: 400px;
+  margin-top: 200px;
+  background-image: url(./jihc-logo-sdu-v3.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+  
+a{
+  text-decoration: none;
+  color: #feffff;
+}
+ 
+.logo{
+  width: 50%;
+}
+
+@media (max-width: 460px) {
+    .header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .main a {
+        padding: 50px; 
+    }
+
+    .image {
+        height: 100px; 
+        width: 100px;
+    }
+}
+
+@media (max-width: 451px) {
+    .header {
+        font-size: 10px; 
+    }
+
+    .image {
+        height: 50px; 
+        width: 50px;
+        padding:10px
+    }
+}
